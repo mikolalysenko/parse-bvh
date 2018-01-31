@@ -45,7 +45,7 @@ function parseBVH (bvhFile) {
     function parseOffset () {
         var tokens = getLine('OFFSET')
         assert(tokens.length === 3, 'invalid OFFSET')
-        return tokens.slice(1).map((x) => parseFloat(x))
+        return tokens.map((x) => parseFloat(x))
     }
 
     function parseChannels () {

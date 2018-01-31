@@ -1,5 +1,5 @@
 {
-  "name": "bvh-parser",
+  "name": "parse-bvh",
   "version": "1.0.0",
   "description": "Parses BioVision Hierarchy (BVH) files",
   "main": "index.js",

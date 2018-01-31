@@ -1,0 +1,30 @@
+{
+  "name": "bvh-parser",
+  "version": "1.0.0",
+  "description": "Parses BioVision Hierarchy (BVH) files",
+  "main": "index.js",
+  "scripts": {
+    "test": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikolalysenko/parse-bvh.git"
+  },
+  "keywords": [
+    "bvh",
+    "biovision",
+    "hierarchy",
+    "skeleton",
+    "skeletal",
+    "animation",
+    "motion",
+    "capture",
+    "mocap"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/parse-bvh/issues"
+  },
+  "homepage": "https://github.com/mikolalysenko/parse-bvh#readme"
+}

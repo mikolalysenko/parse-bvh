@@ -81,8 +81,7 @@ function parseBVH (bvhFile) {
     function parseJoint (parent) {
         var tokens = getTokens()
         if (tokens[0] === 'JOINT') {
-            assert(tokens.length === 2, 'missing joint name')
-            return parseJointDef(tokens[1], parent)
+            return parseJointDef(tokens.slice(1).join(' '), parent)
         } else if (tokens[0] === 'End' && tokens[1] === 'Site') {
             return parseEndSite()
         } else {
@@ -102,9 +101,7 @@ function parseBVH (bvhFile) {
     }
 
     function parseRoot () {
-        var tokens = getLine('ROOT')
-        assert(tokens.length === 1, 'missing joint name')
-        return parseJointDef(tokens[0], null)
+        return parseJointDef(getLine('ROOT').join(' '), null)
     }
 
 
